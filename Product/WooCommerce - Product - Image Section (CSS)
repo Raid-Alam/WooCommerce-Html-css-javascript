@@ -1,0 +1,49 @@
+/* Display the image gallery and thumbnails side-by-side (horizontally) */
+.woocommerce-product-gallery {
+	display: flex;
+	column-gap: 14px;
+	margin: 0 !important;
+}
+
+/* Make the image gallery take around 80% of total width */
+.woocommerce-product-gallery .flex-viewport {
+	flex-basis: 82%;
+	margin: 0 !important;
+}
+
+/* Make the thumnail image container take around 20% of total width and customize its design */
+.flex-control-thumbs {
+	flex-basis: 18%;
+	z-index: 2;
+	height: 385px !important;
+	padding: 10px !important;
+	margin: auto 0 !important;
+}
+
+/* Customize the gallery image */
+.woocommerce-product-gallery__image img {
+	border-radius: 8px;
+	object-fit: cover;
+}
+
+/* Adjust position of the full-size image trigger button */
+.woocommerce-product-gallery__trigger {
+	right: 4.5em !important;
+}
+
+/* Adjust the width and spaces of individual thumbnail image containers and add transition for sliding effect */
+.flex-control-thumbs li {
+	min-width: 100%;
+	margin-bottom: 10px !important;
+	transition: margin-top 0.4s linear;
+}
+
+/* Make the thumbnail images' corners a bit rounded to match brand design */
+.flex-control-thumbs li img {
+	border-radius: 6px;
+}
+
+/* Add borders to the active thumbnail image for clear indication */
+.flex-active {
+	border: 2px solid #4338ca;
+}

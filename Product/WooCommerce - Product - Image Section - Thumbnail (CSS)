@@ -1,0 +1,39 @@
+/* set the position of thumbnail images*/
+.woocommerce-product-gallery.woocommerce-product-gallery--with-images.woocommerce-product-gallery--columns-4.images {
+  display:flex;
+column-gap: 14px;
+    margin-bottom: 0;
+ 
+}
+div.product div.images.woocommerce-product-gallery .flex-viewport {
+   flex-basis: 82%;
+height:50px;
+}
+.woocommerce-js div.product div.images .flex-control-thumbs {
+     flex-basis: 18%;
+ 
+width:300px;
+}
+
+/* Move the images on the Left side*/
+.woocommerce #content div.product div.images, .woocommerce div.product div.images, .woocommerce-page #content div.product div.images, .woocommerce-page div.product div.images {
+    flex-direction: row-reverse;
+}
+
+/* set the min width of thumbnail images*/
+ol.flex-control-nav.flex-control-thumbs li {
+min-width:100%;
+}
+
+/* Limit the thumbnail images to four images*/
+.woocommerce-js div.product div.images .flex-control-thumbs {
+overflow:hidden ;
+    zoom: 1;
+   
+}
+ol.flex-control-nav.flex-control-thumbs {
+    height:390px !important;
+margin:0px;
+padding:0px;
+width:300px;
+}

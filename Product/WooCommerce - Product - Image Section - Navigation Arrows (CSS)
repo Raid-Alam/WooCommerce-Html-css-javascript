@@ -1,0 +1,60 @@
+/* Set the direction of arrows*/
+ul.flex-direction-nav {
+    position: absolute;
+height:420px;
+    z-index: 99999;
+    width: 100%;
+    left: 0;
+    margin: 0;
+    padding: 0px;
+    list-style: none;
+display:flex;
+flex-direction:column;
+justify-content: space-between;
+}
+/* set position of previous arrow*/
+li.flex-nav-prev { margin-top:-2px !important;
+left:-5px !important;}
+/* set position of next arrow*/
+ 
+li.flex-nav-next{ margin-top:200px; right:130px; !important;}
+ 
+a.flex-next {visibility:hidden;}
+a.flex-prev {visibility:hidden;}
+/* next arrow appear */
+a.flex-next::after {
+visibility:visible;content: '\f107';
+font-family: 'Font Awesome 5 Free';
+margin-top: 0px;
+ 
+margin-top: 30px;
+font-size: 20px;   
+font-weight: bold;
+}
+/* previous arrow appear*/
+a.flex-prev::before {
+    visibility:visible;
+    content: '\f106';
+font-family: 'Font Awesome 5 Free';   
+margin-top: 0px;
+ 
+margin-left: 30px;
+font-size: 20px;
+font-weight: bold;
+}
+ 
+ul.flex-direction-nav li a {
+color: #ccc;
+}
+ 
+ul.flex-direction-nav li a:hover {
+text-decoration: none;
+}
+ 
+ 
+ul.flex-direction-nav li a:hover {
+text-decoration: none;
+}
+.flex-control-nav{
+top:0px;
+}

@@ -1,0 +1,60 @@
+/*WooCommerce - Shop CSS*/
+
+
+
+
+/* Customize product card */
+.products .product {
+	background-color: #F0F0F7;
+	padding: 18px !important;
+	border-radius: 12px;
+}
+
+/* Customize product image */
+.products .product img {
+	border-radius: 8px;
+}
+
+/* Customize product category text */
+.astra-shop-summary-wrap .ast-woo-product-category {
+	margin-top: 5px;
+	font-weight: 600;
+	color: #1E1B4B !important;
+}
+
+/* Truncate product title by 2 lines */
+.astra-shop-summary-wrap h2 {
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	margin-top: 10px !important;
+	font-size: 17px !important;
+}
+
+/* Truncate product description by 4 lines */
+.astra-shop-summary-wrap .ast-woo-shop-product-description {
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 4;
+	margin-bottom: 30px;
+}
+
+/* Remove the price and star ratings from product card */
+.astra-shop-summary-wrap .price, .astra-shop-summary-wrap .star-rating {
+	display: none !important;
+}
+
+/* Adjust add to quote button width and push it at the bottom of the card */
+.products .product .button {
+	width: fit-content;
+	margin-top: auto !important;
+}
+
+/* Customize sorting dropdown */
+.woocommerce-ordering select {
+	background-color: #F5F5FA !important;
+	border: 3px solid #F0F0F7 !important;
+	border-radius: 8px !important;
+}
